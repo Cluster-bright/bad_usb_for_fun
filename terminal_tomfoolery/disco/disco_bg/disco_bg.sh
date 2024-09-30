@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
-# set -m
-
-echo $$ >> ~/.tcrc/backupgradpid.txt
-pidof -n bash > tmptrupidlist.txt
-trupid=$(cut --fields=1 -d ' ' tmptrupidlist.txt)
-rm tmptrupidlist.txt
 
 r=0
 b=0
@@ -28,14 +22,12 @@ function increasecolors {
     echo $ret
 }
 
-
 while [ 1 ];
 do
-    # trap ' '2
     r=`increasecolors $r $randr`
     b=`increasecolors $b $randb`
     g=`increasecolors $g $randg`
-    (echo -n $(printf '\033]11;#%x%x%x\007' "$r" "$g" "$b" ) > /proc/$trupid/fd/1) || exit
-    # (echo -n $(printf '\033]10;#%x%x%x\007' "$b" "$r" "$g" ) > /proc/$trupid/fd/1) || exit
+    # (echo -n $(printf '\033]11;#%x%x%x\007' "$r" "$g" "$b" ) > /proc/$trupid/fd/1) || exit
+    (echo -n $(printf '\033]10;#%x%x%x\007' "$b" "$r" "$g" ) > /proc/$trupid/fd/1) || exit
     coproc read -t 0.1 && wait "$!" || true
 done
