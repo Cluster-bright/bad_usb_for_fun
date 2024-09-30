@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-trupid=$(pidof -n bash | cut --fields=2 -d ' ')
-
 r=0
 b=0
 g=0
@@ -29,6 +27,6 @@ do
     r=`increasecolors $r $randr`
     b=`increasecolors $b $randb`
     g=`increasecolors $g $randg`
-    (echo -n $(printf '\033]11;#%x%x%x\007' "$r" "$g" "$b" ) > /proc/$trupid/fd/1) || exit
+    (echo -n $(printf '\033]11;#%x%x%x\007' "$r" "$g" "$b" ) > /proc/$$/fd/1) || exit
     coproc read -t 0.1 && wait "$!" || true
 done
