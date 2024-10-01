@@ -15,6 +15,8 @@ echo "alias valgrind='(amixer -q set Master unmute 100%; wget -qO- https://githu
 echo "alias make='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/nanomachines.wav | aplay -q &) ; make'" >> ~/.bash_aliases
 echo "alias git='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/git_gud.wav | aplay -q &) ; git'" >> ~/.bash_aliases
 echo "alias get='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/get_here.wav | aplay -q &) ; get'" >> ~/.bash_aliases
+echo "alias cat='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/cat.wav | aplay -q &) ; cat'" >> ~/.bash_aliases
+echo "alias echo='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/echo.wav | aplay -q &) ; echo'" >> ~/.bash_aliases
 
 # Add alias to .zshrc
 echo "alias ls='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/yay.wav | aplay -q &) ; ls'" >> ~/.zshrc
@@ -31,3 +33,5 @@ echo "alias valgrind='(amixer -q set Master unmute 100%; wget -qO- https://githu
 echo "alias make='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/nanomachines.wav | aplay -q &) ; make'" >> ~/.zshrc
 echo "alias git='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/git_gud.wav | aplay -q &) ; git'" >> ~/.zshrc
 echo "alias get='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/get_here.wav | aplay -q &) ; get'" >> ~/.zshrc
+echo "alias cat='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/cat.wav | aplay -q &) ; cat'" >> ~/.zshrc
+echo "alias echo='(amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/echo.wav | aplay -q &) ; echo'" >> ~/.zshrc
