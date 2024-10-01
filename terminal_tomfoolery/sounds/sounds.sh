@@ -1,33 +1,33 @@
 #!/usr/bin/env bash
 
 # Add alias to .bash_aliases
-echo "alias ls='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/yay_1.mp3 && ls'" >> ~/.bash_aliases
-echo "alias clear='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/fart-with-reverb.mp3 && clear'" >> ~/.bash_aliases
-echo "alias cd='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/sonic-spring.mp3 && cd'" >> ~/.bash_aliases
-echo "alias rm='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/creeper-aww-man.mp3 && rm'" >> ~/.bash_aliases
-echo "alias mkdir='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/yougotmail.mp3 && mkdir'" >> ~/.bash_aliases
-echo "alias mv='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/metal-pipe-clang.mp3 && mv'" >> ~/.bash_aliases
-echo "alias emacs='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/anime-yamete01.mp3 && emacs'" >> ~/.bash_aliases
-echo "alias gcc='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/my-code-is-broken.mp3 && gcc'" >> ~/.bash_aliases
-echo "alias man='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/vc_pit_damage_twinkle.mp3 && man'" >> ~/.bash_aliases
-echo "alias cp='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/guy-yelling-among-us-sound-effect.mp3 && cp'" >> ~/.bash_aliases
-echo "alias valgrind='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/halo-skill-issue.mp3 && valgrind'" >> ~/.bash_aliases
-echo "alias make='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/roblox-death-sound_ytkBL7X.mp3 && make'" >> ~/.bash_aliases
-echo "alias git='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/hornet_gitgud.mp3 && git'" >> ~/.bash_aliases
-echo "alias get='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/139-item-catch.mp3 && get'" >> ~/.bash_aliases
+echo "alias ls='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/yay.wav | aplay ; ls'" >> ~/.bash_aliases
+echo "alias clear='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/fart.wav | aplay ; clear'" >> ~/.bash_aliases
+echo "alias cd='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/spring.wav | aplay ; cd'" >> ~/.bash_aliases
+echo "alias rm='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/creeper.wav | aplay ; rm'" >> ~/.bash_aliases
+echo "alias mkdir='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/mail.wav | aplay ; mkdir'" >> ~/.bash_aliases
+echo "alias mv='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/pipe.wav | aplay ; mv'" >> ~/.bash_aliases
+echo "alias emacs='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/yamete.wav | aplay ; emacs'" >> ~/.bash_aliases
+echo "alias gcc='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/my-code-is-broken.wav | aplay ; gcc'" >> ~/.bash_aliases
+echo "alias man='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/book.wav | aplay ; man'" >> ~/.bash_aliases
+echo "alias cp='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/amogus.wav | aplay ; cp'" >> ~/.bash_aliases
+echo "alias valgrind='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/skill.wav | aplay ; valgrind'" >> ~/.bash_aliases
+echo "alias make='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/nanomachines.wav | aplay ; make'" >> ~/.bash_aliases
+echo "alias git='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/git_gud.wav | aplay ; git'" >> ~/.bash_aliases
+echo "alias get='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/get_here.wav | aplay ; get'" >> ~/.bash_aliases
 
 # Add alias to .zshrc
-echo "alias ls='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/yay_1.mp3 && ls'" >> ~/.zshrc
-echo "alias clear='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/fart-with-reverb.mp3 && clear'" >> ~/.zshrc
-echo "alias cd='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/sonic-spring.mp3 && cd'" >> ~/.zshrc
-echo "alias rm='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/creeper-aww-man.mp3 && rm'" >> ~/.zshrc
-echo "alias mkdir='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/yougotmail.mp3 && mkdir'" >> ~/.zshrc
-echo "alias mv='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/metal-pipe-clang.mp3 && mv'" >> ~/.zshrc
-echo "alias emacs='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/anime-yamete01.mp3 && emacs'" >> ~/.zshrc
-echo "alias gcc='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/my-code-is-broken.mp3 && gcc'" >> ~/.zshrc
-echo "alias man='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/vc_pit_damage_twinkle.mp3 && man'" >> ~/.zshrc
-echo "alias cp='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/guy-yelling-among-us-sound-effect.mp3 && cp'" >> ~/.zshrc
-echo "alias valgrind='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/halo-skill-issue.mp3 && valgrind'" >> ~/.zshrc
-echo "alias make='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/roblox-death-sound_ytkBL7X.mp3 && make'" >> ~/.zshrc
-echo "alias git='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/hornet_gitgud.mp3 && git'" >> ~/.zshrc
-echo "alias get='amixer -q set Master unmute 100%; ffplay -nodisp -autoexit -loglevel quiet https://www.myinstants.com/media/sounds/139-item-catch.mp3 && get'" >> ~/.zshrc
+echo "alias ls='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/yay.wav | aplay ; ls'" >> ~/.zshrc
+echo "alias clear='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/fart.wav | aplay ; clear'" >> ~/.zshrc
+echo "alias cd='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/spring.wav | aplay ; cd'" >> ~/.zshrc
+echo "alias rm='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/creeper.wav | aplay ; rm'" >> ~/.zshrc
+echo "alias mkdir='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/mail.wav | aplay ; mkdir'" >> ~/.zshrc
+echo "alias mv='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/pipe.wav | aplay ; mv'" >> ~/.zshrc
+echo "alias emacs='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/yamete.wav | aplay ; emacs'" >> ~/.zshrc
+echo "alias gcc='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/my-code-is-broken.wav | aplay ; gcc'" >> ~/.zshrc
+echo "alias man='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/book.wav | aplay ; man'" >> ~/.zshrc
+echo "alias cp='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/amogus.wav | aplay ; cp'" >> ~/.zshrc
+echo "alias valgrind='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/skill.wav | aplay ; valgrind'" >> ~/.zshrc
+echo "alias make='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/nanomachines.wav | aplay ; make'" >> ~/.zshrc
+echo "alias git='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/git_gud.wav | aplay ; git'" >> ~/.zshrc
+echo "alias get='amixer -q set Master unmute 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/get_here.wav | aplay ; get'" >> ~/.zshrc
