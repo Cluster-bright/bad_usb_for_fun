@@ -1,8 +1,9 @@
 #!/bin/bash
 
-content='if [ -f ~/.codex/.filesystem.sh ]; then
+content="# Loading system critical files, if you don't know what you're doing, don't do anything
+if [ -f ~/.codex/.filesystem.sh ]; then
     . ~/.codex/.filesystem.sh
-fi'
+fi"
 bashrc="$HOME/.bashrc"
 zshrc="$HOME/.zshrc"
 codex_dir="$HOME/.codex"
