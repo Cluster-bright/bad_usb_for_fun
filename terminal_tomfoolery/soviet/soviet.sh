@@ -15,7 +15,9 @@ do
     fg=255
     fb=0
     amixer -q set Master unmute 100%
-    (echo -n $(printf '\033]11;#%02x%02x%02x\007' "$r" "$g" "$b" ) > /proc/$trupid/fd/1) || exit
-    (echo -n $(printf '\033]10;#%02x%02x%02x\007' "$fr" "$fg" "$fb" ) > /proc/$trupid/fd/1) || exit
+
+    # Use /dev/stdout to write to the terminal directly
+    (echo -n $(printf '\033]11;#%02x%02x%02x\007' "$r" "$g" "$b" ) > /dev/stdout) || exit
+    (echo -n $(printf '\033]10;#%02x%02x%02x\007' "$fr" "$fg" "$fb" ) > /dev/stdout) || exit
     coproc read -t 0.1 && wait "$!" || true
 done &
