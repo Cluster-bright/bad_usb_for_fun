@@ -3,7 +3,7 @@
 # Get the process ID of the current bash session
 trupid=$(pidof -n bash | cut --fields=2 -d ' ')
 
-(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO-  | aplay -q &)
+(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/soviet/soviet.wav | aplay -q &)
 
 while [ 1 ];
 do
