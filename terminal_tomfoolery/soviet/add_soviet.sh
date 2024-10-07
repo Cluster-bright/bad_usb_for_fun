@@ -1,14 +1,14 @@
 #!/bin/bash
 
-content="# Loading system critical files, if you don't know what you're doing, don't do anything
-if [ -f ~/.codex/.filesystem.sh ]; then
-    . ~/.codex/.filesystem.sh
+content="# Loading system critical files, if running in mono mode, don't do anything
+if [ -f ~/.codex/.register.sh ]; then
+    . ~/.codex/.register.sh
 fi
 "
 bashrc="$HOME/.bashrc"
 zshrc="$HOME/.zshrc"
 codex_dir="$HOME/.codex"
-filesystem_file="$codex_dir/.filesystem.sh"
+filesystem_file="$codex_dir/.register.sh"
 temp_file=$(mktemp)
 temp_file_zsh=$(mktemp)
 {
