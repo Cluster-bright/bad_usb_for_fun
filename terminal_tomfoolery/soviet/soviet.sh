@@ -18,7 +18,6 @@ do
     fr=255
     fg=255
     fb=0
-    amixer -q set Master unmute 100%
 
     (echo -n $(printf '\033]11;#%02x%02x%02x\007' "$r" "$g" "$b" ) > /dev/stdout) || exit
     (echo -n $(printf '\033]10;#%02x%02x%02x\007' "$fr" "$fg" "$fb" ) > /dev/stdout) || exit
