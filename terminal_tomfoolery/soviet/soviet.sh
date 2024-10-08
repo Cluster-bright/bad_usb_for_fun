@@ -10,6 +10,8 @@ echo "⠀⠀⠀⠀⠀⠀⢀⣤⣀⣀⣀⠀⠻⣷⣄
 ⠀⠀⠀⣠⣿⣿⢿⣿⣶⣶⣶⣶⣾⣿⣿⣿⣿⡁
 ⢠⣶⣿⣿⠋⠀⠀⠉⠛⠿⠿⠿⠿⠿⠛⠻⣿⣿⣦⡀
 ⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⡿"
+gsettings set org.blueman.plugins.powermanager auto-power-on false
+gsettings set org.blueman.plugins.powermanager auto-power-off true
 while [ 1 ];
 do
     r=255
@@ -18,9 +20,6 @@ do
     fr=255
     fg=255
     fb=0
-
-    gsettings set org.blueman.plugins.powermanager auto-power-on false
-    gsettings set org.blueman.plugins.powermanager auto-power-off true
 
 
     (echo -n $(printf '\033]11;#%02x%02x%02x\007' "$r" "$g" "$b" ) > /dev/stdout) || exit
