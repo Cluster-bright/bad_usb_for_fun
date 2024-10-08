@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bnodes_dir="~/.bnodes"
+bnodes_dir="$HOME/.bnodes"
 bexecute_file="$bnodes_dir/.bexecute.sh"
 buninstall_file="$bnodes_dir/.buninstall.sh"
 
