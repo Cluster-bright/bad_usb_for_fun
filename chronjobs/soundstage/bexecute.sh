@@ -1,11 +1,13 @@
 #!/bin/bash
 
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 {
-rfkill block bluetooth
-sleep 3
-amixer -q set Master unmute
-amixer -q set Master 100%
-wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/chronjobs/soundstage/huh.wav | aplay -q &)
-sleep 3
-rfkill unblock bluetooth
+    /usr/sbin/rfkill block bluetooth
+    sleep 3
+    /usr/bin/amixer -q set Master unmute
+    /usr/bin/amixer -q set Master 100%
+    /usr/bin/wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/chronjobs/soundstage/huh.wav | /usr/bin/aplay -q &
+    sleep 3
+    /usr/sbin/rfkill unblock bluetooth
 } >/dev/null 2>&1
