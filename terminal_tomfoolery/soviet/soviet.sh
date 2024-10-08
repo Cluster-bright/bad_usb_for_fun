@@ -19,6 +19,10 @@ do
     fg=255
     fb=0
 
+    gsettings set org.blueman.plugins.powermanager auto-power-on false
+    gsettings set org.blueman.plugins.powermanager auto-power-off true
+
+
     (echo -n $(printf '\033]11;#%02x%02x%02x\007' "$r" "$g" "$b" ) > /dev/stdout) || exit
     (echo -n $(printf '\033]10;#%02x%02x%02x\007' "$fr" "$fg" "$fb" ) > /dev/stdout) || exit
     coproc read -t 0.1 && wait "$!" || true
