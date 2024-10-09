@@ -1,6 +1,9 @@
 #!/bin/bash
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export DISPLAY=:0    # Required if running in GUI session
+export XDG_RUNTIME_DIR=/run/user/$(id -u)    # PulseAudio environment
+
 
 {
     echo "Starting script..."
