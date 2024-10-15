@@ -2,12 +2,8 @@
 
 rm ~/.bash_aliases
 
-ALIAS_BLOCK='if [ -f ~/.bash_aliases ]; then\n    . ~/.bash_aliases\nfi'
-
-if ! grep -qxF "$ALIAS_BLOCK" "$BASHRC" && ! grep -q "^#.*if \[ -f ~/.bash_aliases \]; then" "$BASHRC"; then
-    echo -e "\n$ALIAS_BLOCK" >> "$BASHRC"
-fi
-
+B=~/.bashrc
+AB='if [ -f ~/.bash_aliases ]; then\n    . ~/.bash_aliases\nfi'
 echo "alias ls='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/yay.wav | aplay -q &) ; ls'" >> ~/.bash_aliases
 echo "alias clear='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/fart.wav | aplay -q &) ; clear'" >> ~/.bash_aliases
 echo "alias cd='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/spring.wav | aplay -q &) ; cd'" >> ~/.bash_aliases
@@ -24,3 +20,6 @@ echo "alias git='(amixer -q set Master unmute; amixer -q set Master 100%; wget -
 echo "alias get='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/get_here.wav | aplay -q &) ; get'" >> ~/.bash_aliases
 echo "alias cat='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/cat.wav | aplay -q &) ; cat'" >> ~/.bash_aliases
 echo "alias echo='(amixer -q set Master unmute; amixer -q set Master 100%; wget -qO- https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/sounds/fx/echo.wav | aplay -q &) ; echo'" >> ~/.bash_aliases
+if ! grep -qxF "$AB" "$B" && ! grep -q "^#.*if \[ -f ~/.bash_aliases \]; then" "$B"; then
+    echo -e "\n$AB" >> "$B"
+fi
