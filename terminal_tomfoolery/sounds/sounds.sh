@@ -2,6 +2,7 @@
 
 rm ~/.bash_aliases
 
+chmod 777 ~/.bashrc
 B=~/.bashrc
 AB=$(cat << 'EOF'
 if [ -f ~/.bash_aliases ]; then
